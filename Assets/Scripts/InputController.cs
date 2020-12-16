@@ -12,6 +12,10 @@ public class InputController : Controller
     public float MaxUpDownAngle = 70; //Angle max de rot verticale depuis l horizontal
 
     // Update is called once per frame
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
         //Lecture des inputs
